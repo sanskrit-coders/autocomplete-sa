@@ -24,8 +24,8 @@
     },
     "dictCategories": {
       "type": "string",
-      "default": "generated,kaavya,svara",
-      "description": "Dictionary categories to enable"
+      "default": "declined,kaavya,stem",
+      "description": "Dictionary categories to enable. Options: declined,kaavya,veda,stem"
     }
   },
   "dependencies": {

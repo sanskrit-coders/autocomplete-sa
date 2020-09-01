@@ -7,6 +7,10 @@ This package requires [autocomplete-plus](https://github.com/atom/autocomplete-p
 The package [fuzzaldrin](https://github.com/atom/fuzzaldrin) is one of the core package of atom which has been installed by default. This package offers a fuzzy match function which is useful for uncertain words. The dictionary is based on the Oxford advanced learner dictionary.
 
 ## Usage
+### Setting dictionary groups
+Autocomplete dictionaries are categorised into several groups such as kaavya, declined, veda etc.. You can choose which categories are to be used. (See representative screenshot below)
+
+### Setting file types
 For the defined file types, it will complete automatically. Like the figure shows below.
 
 ![A screenshot of the package using](https://raw.githubusercontent.com/sanskrit-coders/autocomplete-sa/master/autocomplete-sa-demo.gif)
