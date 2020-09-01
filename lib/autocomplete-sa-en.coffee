@@ -2,7 +2,7 @@ provider = require './provider'
 
 module.exports =
   activate: ->
-      provider.loadDict()
+      provider.loadDicts()
 
   getProvider: ->
       provider

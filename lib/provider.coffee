@@ -21,8 +21,8 @@ module.exports =
     line = editor.getTextInRange([[bufferPosition.row, 0], bufferPosition])
     line.match(@wordRegex)?[0] or ''
 
-  loadDict: ->
-      fs.readFile path.resolve(__dirname, '..', 'sa-en-dict.json'), (error, content) =>
+  loadDicts: ->
+      fs.readFile path.resolve(__dirname, '..', 'tiNanta-dict.json'), (error, content) =>
           return if error
           @properties = JSON.parse(content)
           @keys = Object.keys(@properties)
