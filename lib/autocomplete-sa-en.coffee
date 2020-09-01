@@ -2,7 +2,7 @@ provider = require './provider'
 
 module.exports =
   activate: ->
-      provider.loadDicts()
+      provider.loadDict('tiNanta-dhaval')
 
   getProvider: ->
       provider
