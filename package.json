@@ -1,7 +1,7 @@
 {
   "name": "autocomplete-sa",
   "main": "./lib/autocomplete-sa",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "author": "Sasnskrit coders <sanskrit-programmers@googlegroups.com>",
   "description": "Sanskrit word autocompetion with the hint of explanation.",
   "repository": "https://github.com/sanskrit-coders/autocomplete-sa",
