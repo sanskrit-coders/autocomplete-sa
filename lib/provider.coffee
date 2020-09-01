@@ -4,7 +4,7 @@ path = require 'path'
 fuzzaldrin = require 'fuzzaldrin'
 
 module.exports =
-  selector: atom.config.get('autocomplete-en-en.FileType')
+  selector: atom.config.get('autocomplete-sa-en.FileType')
   inclusionPriority: 0
   excludeLowerPriority: false
 
@@ -21,8 +21,8 @@ module.exports =
     line = editor.getTextInRange([[bufferPosition.row, 0], bufferPosition])
     line.match(@wordRegex)?[0] or ''
 
-  loadEnglishDict: ->
-      fs.readFile path.resolve(__dirname, '..', 'en-en-dict.json'), (error, content) =>
+  loadDict: ->
+      fs.readFile path.resolve(__dirname, '..', 'sa-en-dict.json'), (error, content) =>
           return if error
           @properties = JSON.parse(content)
           @keys = Object.keys(@properties)
