@@ -8,7 +8,7 @@ module.exports =
   inclusionPriority: 0
   excludeLowerPriority: false
 
-  wordRegex: /[a-zA-Z][\-a-zA-Z]*$/
+  wordRegex: /[ँ-ॿ][ँ-ॿ꣠-ꣿ᳐-ᳺ]*$/
   properties: {}
   keys: []
 
