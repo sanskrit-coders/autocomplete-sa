@@ -1,10 +1,10 @@
 # { BufferedProcess } = require 'atom'
 fs = require 'fs'
-path = require 'path'
 fuzzaldrin = require 'fuzzaldrin'
 
 module.exports =
   selector: atom.config.get('autocomplete-sa.FileType')
+  dictCategories: atom.config.get('autocomplete-sa.dictCategories')
   inclusionPriority: 0
   excludeLowerPriority: false
 
@@ -20,8 +20,8 @@ module.exports =
     line = editor.getTextInRange([[bufferPosition.row, 0], bufferPosition])
     line.match(@wordRegex)?[0] or ''
 
-  loadDict: (dictName)->
-      fs.readFile path.resolve(__dirname, '..', 'dicts', dictName + '.csv'), (error, content) =>
+  loadDict: (file)->
+      fs.readFile file, (error, content) =>
           return if error
           words = content.toString().split('\n')
           @keys = @keys.concat(words)
